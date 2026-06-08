@@ -35,10 +35,12 @@
   }
 }
 
-/* Disable native scroll — Locomotive Scroll owns all scrolling */
-html, body {
-  overflow: hidden;
-  height: 100%;
+/* Disable native scroll — Locomotive Scroll owns all scrolling on desktop */
+@media (min-width: 1024px) {
+  html, body {
+    overflow: hidden;
+    height: 100%;
+  }
 }
 
 /* Locomotive Scroll support classes */

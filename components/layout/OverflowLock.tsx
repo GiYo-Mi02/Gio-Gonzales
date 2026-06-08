@@ -10,8 +10,23 @@ import { useEffect } from 'react';
  */
 export default function OverflowLock() {
   useEffect(() => {
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.overflow = 'hidden';
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+      } else {
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    };
   }, []);
 
   return null;
