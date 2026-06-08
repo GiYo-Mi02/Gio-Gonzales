@@ -9,6 +9,8 @@ export interface LocomotiveInstance {
   scroll: { instance: { scroll: { y: number } } };
   update: () => void;
   destroy: () => void;
+  stop: () => void;
+  start: () => void;
 }
 
 /**

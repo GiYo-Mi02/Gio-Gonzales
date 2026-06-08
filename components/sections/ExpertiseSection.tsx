@@ -86,20 +86,22 @@ export default function ExpertiseSection() {
       const el = accordionContentRefs.current[key];
       if (el) {
         if (key === nextActive) {
-          gsap.fromTo(el,
-            { height: 0, opacity: 0 },
-            { height: 'auto', opacity: 1, duration: 0.5, ease: 'power2.out' }
-          );
+          gsap.to(el, {
+            height: 'auto',
+            opacity: 1,
+            duration: 0.5,
+            ease: 'power2.out',
+          });
         } else {
-          gsap.to(el, { height: 0, opacity: 0, duration: 0.4, ease: 'power2.in' });
+          gsap.to(el, {
+            height: 0,
+            opacity: 0,
+            duration: 0.4,
+            ease: 'power2.out',
+          });
         }
       }
     });
-
-    // Refresh scrolltrigger metrics
-    setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 550);
   };
 
   return (
@@ -173,10 +175,10 @@ export default function ExpertiseSection() {
                   ref={(el) => {
                     accordionContentRefs.current[item.category] = el;
                   }}
-                  className="overflow-hidden transition-all duration-300 px-6 md:px-8"
+                  className="overflow-hidden px-6 md:px-8"
                   style={{ 
-                    height: isActive ? 'auto' : 0,
-                    opacity: isActive ? 1 : 0
+                    height: item.category === 'Frontend' ? 'auto' : 0,
+                    opacity: item.category === 'Frontend' ? 1 : 0
                   }}
                 >
                   <div className="pb-8 space-y-6 pt-1 border-t border-[#1e1e1e]/40">

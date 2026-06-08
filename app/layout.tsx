@@ -20,8 +20,11 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: 'Gio Joshua Gonzales | Principal Engineer & Designer',
-  description: 'Gio Joshua Gonzales is a Principal Engineer & Designer based in the Philippines, specialized in building precision-built web applications.',
+  title: 'Gio Joshua Gonzales | Full Stack Developer & Designer',
+  description: 'Gio Joshua Gonzales is a Full Stack Developer & Designer based in the Philippines, specialized in building precision-built web applications.',
+  icons: {
+    icon: '/logo.svg',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

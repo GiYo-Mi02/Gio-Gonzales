@@ -28,7 +28,7 @@ export default function CustomCursor({ children }: { children?: React.ReactNode 
       <div
         id="custom-cursor"
         ref={cursorRef}
-        className={`fixed top-0 left-0 rounded-full pointer-events-none z-50 mix-blend-difference hidden lg:block -translate-x-1/2 -translate-y-1/2 transition-[width,height,background-color,border-color,border-width] duration-300 ${cursorClasses}`}
+        className={`fixed top-0 left-0 rounded-full pointer-events-none z-[99999] mix-blend-difference hidden lg:block -translate-x-1/2 -translate-y-1/2 transition-[width,height,background-color,border-color,border-width] duration-300 ${cursorClasses}`}
       />
       {children}
     </CursorContext.Provider>

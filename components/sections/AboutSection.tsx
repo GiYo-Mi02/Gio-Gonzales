@@ -7,9 +7,9 @@ import { useCursor } from '@/components/layout/CustomCursor';
 import anotherMeImage from '@/assets/anotherme.png';
 
 const statsData = [
-  { id: 'proj', value: 30, suffix: '+', label: 'Projects Developed' },
+  { id: 'proj', value: 20, suffix: '+', label: 'Projects Developed' },
   { id: 'exp',  value: 2,  suffix: '+', label: 'Years Experience' },
-  { id: 'usr',  value: 200,suffix: '+', label: 'Active Users Reach' },
+  { id: 'usr',  value: 100,suffix: '+', label: 'Active Users Reach' },
   { id: 'tech', value: 10, suffix: '+', label: 'Core Technologies' },
 ];
 
@@ -102,7 +102,7 @@ export default function AboutSection() {
           <div className="space-y-6 gsap-reveal-fade">
             <h3 className="font-display text-2xl sm:text-3xl font-bold uppercase text-[#f0f0f0]">Architect of clean web solutions.</h3>
             <p className="text-neutral-400 font-sans text-base sm:text-lg leading-relaxed max-w-3xl">
-              Hello, I&apos;m <span className="text-[#f0f0f0] font-medium">Gio Joshua Gonzales</span>, a Principal Engineer &amp; Designer based in the Philippines. I specialize in assembling high-performance, responsive ecosystems modeled around clean client specifications.
+              Hello, I&apos;m <span className="text-[#f0f0f0] font-medium">Gio Joshua Gonzales</span>, a Full Stack Developer &amp; Designer based in the Philippines. I specialize in assembling high-performance, responsive ecosystems modeled around clean client specifications.
             </p>
             <p className="text-neutral-400 font-sans text-base sm:text-lg leading-relaxed max-w-3xl">
               Through custom databases, optimized server frameworks, and intricate visual orchestration libraries (such as GSAP, p5.js, and Canvas APIs), I ensure that applications not only load with hyper-performance but also captivate users through refined editorial interaction.

@@ -39,6 +39,11 @@ export interface Achievement {
   competition: string;
   result: string;
   desc: string;
+  images?: string[];
+  youtubeEmbed?: string;
+  whatIDid?: string;
+  howIDid?: string;
+  whatILearned?: string;
 }
 
 export interface StatItem {
