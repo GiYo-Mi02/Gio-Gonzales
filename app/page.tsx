@@ -46,7 +46,6 @@ export default function Home() {
       <ScrollProvider>
         <div 
           data-scroll-container 
-          style={{ overflowY: 'auto' }}
           className={`relative bg-[#0a0a0a] w-full transition-opacity duration-700 ${
             introFinished ? 'opacity-100' : 'opacity-0'
           }`}

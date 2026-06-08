@@ -61,10 +61,7 @@ export default function ScrollProvider({ children }: ScrollProviderProps) {
               height: window.innerHeight,
             };
           },
-          pinType: (() => {
-            const el = document.querySelector('[data-scroll-container]') as HTMLElement;
-            return el?.style.transform ? 'transform' : 'fixed';
-          })(),
+          pinType: 'transform',
         });
 
         // ── 3. Keep both systems in sync on every scroll tick ─────────────────
