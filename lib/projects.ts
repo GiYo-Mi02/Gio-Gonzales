@@ -13,7 +13,7 @@ export const projects: Project[] = [
     tech: ['Next.js', 'p5.js', 'Tailwind CSS'],
     year: '2025',
     link: 'https://interactive-dsa-fawn.vercel.app/',
-    image: 'https://picsum.photos/seed/interactive-dsa/600/380',
+    image: '/selected-work/3.png',
   },
   {
     id: 'snapnotes-ai',
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     tech: ['Next.js', 'GPT-4', 'Supabase'],
     year: '2025',
     link: 'https://snap-noting-ai-ybs6.vercel.app/',
-    image: 'https://picsum.photos/seed/snapnotes/600/380',
+    image: '/selected-work/2.png',
   },
   {
     id: 'mr-and-ms-umak-tabulation-system',
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     tech: ['React.js', 'Node.js', 'Express'],
     year: '2025',
     link: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/umak-tab/600/380',
+    image: '/selected-work/7.png',
   },
   {
     id: 'resume-ai-analyzer',
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     tech: ['Next.js', 'OpenAI', 'Tailwind CSS'],
     year: '2025',
     link: 'https://ai-resume-analyzer-jade.vercel.app/',
-    image: 'https://picsum.photos/seed/resumeai/600/380',
+    image: '/selected-work/5.png',
   },
   {
     id: 'logistics-management-system',
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     tech: ['Next.js', 'Redis', 'Supabase'],
     year: '2025',
     link: 'https://logistics-system-one.vercel.app/',
-    image: 'https://picsum.photos/seed/logistics/600/380',
+    image: '/selected-work/4.png',
   },
   {
     id: 'web-based-photobooth-application',
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     tech: ['JavaScript', 'Canvas API', 'HTML5'],
     year: '2025',
     link: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/photobooth/600/380',
+    image: '/selected-work/6.png',
   },
   {
     id: 'ccis-ticket-automation-system',
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     tech: ['Next.js', 'QR Code', 'Node.js'],
     year: '2025',
     link: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/ticket/600/380',
+    image: '/selected-work/8.png',
   },
 ];
 
@@ -89,7 +89,7 @@ export const caseStudiesData: Record<string, CaseStudy> = {
     year: '2025',
     link: 'https://interactive-dsa-fawn.vercel.app/',
     github: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/interactive-dsa-hero/1920/1080',
+    image: '/selected-work/3.png',
     role: 'Lead Developer & Interactive Designer',
     timeline: 'Jan 2025 - Mar 2025',
     problem:
@@ -148,7 +148,7 @@ export const caseStudiesData: Record<string, CaseStudy> = {
     year: '2025',
     link: 'https://snap-noting-ai-ybs6.vercel.app/',
     github: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/snapnotes-hero/1920/1080',
+    image: '/selected-work/2.png',
     role: 'Full-Stack AI Engineer',
     timeline: 'Feb 2025',
     problem:
@@ -207,7 +207,7 @@ export const caseStudiesData: Record<string, CaseStudy> = {
     year: '2025',
     link: 'https://github.com/giojoshua',
     github: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/umak-hero/1920/1080',
+    image: '/selected-work/7.png',
     role: 'Lead Full-Stack Architect',
     timeline: 'Feb 2025 - Mar 2025',
     problem:
@@ -263,7 +263,7 @@ export const caseStudiesData: Record<string, CaseStudy> = {
     year: '2025',
     link: 'https://ai-resume-analyzer-jade.vercel.app/',
     github: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/resumeai-hero/1920/1080',
+    image: '/selected-work/5.png',
     role: 'Lead AI & UX Architect',
     timeline: 'April 2025',
     problem:
@@ -319,7 +319,7 @@ export const caseStudiesData: Record<string, CaseStudy> = {
     year: '2025',
     link: 'https://logistics-system-one.vercel.app/',
     github: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/logistics-hero/1920/1080',
+    image: '/selected-work/4.png',
     role: 'Lead Database Engineer',
     timeline: 'April 2025 - May 2025',
     problem:
@@ -375,7 +375,7 @@ export const caseStudiesData: Record<string, CaseStudy> = {
     year: '2025',
     link: 'https://github.com/giojoshua',
     github: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/photobooth-hero/1920/1080',
+    image: '/selected-work/6.png',
     role: 'Interactive Canvas Lead',
     timeline: 'May 2025',
     problem:
@@ -431,7 +431,7 @@ export const caseStudiesData: Record<string, CaseStudy> = {
     year: '2025',
     link: 'https://github.com/giojoshua',
     github: 'https://github.com/giojoshua',
-    image: 'https://picsum.photos/seed/ticket-hero/1920/1080',
+    image: '/selected-work/8.png',
     role: 'Full-Stack Automation Lead',
     timeline: 'May 2025 - June 2025',
     problem:
