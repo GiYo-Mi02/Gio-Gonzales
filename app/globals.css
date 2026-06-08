@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: var(--font-sans), sans-serif;
+  --font-display: var(--font-display), sans-serif;
+  --color-accent: #c8f45e;
+}
+
+/* Custom Utility Classes for styling and layout support */
+.font-sans {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+/* Clip path for headline clip text reveals */
+.clip-path-hide {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.clip-path-reveal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Custom custom cursor styling helpers */
+@media (min-width: 1024px) {
+  body {
+    cursor: none;
+  }
+  a, button, [role="button"], .interactive-hover {
+    cursor: none !important;
+  }
+}
+
+/* Disable native scroll — Locomotive Scroll owns all scrolling */
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Locomotive Scroll support classes */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+/* Hide native scrollbar entirely — Locomotive provides virtual scroll */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Neon Glow support labels */
+.neon-pulse {
+  box-shadow: 0 0 15px rgba(200, 244, 94, 0.4);
+}
+
+/* ─── Mobile-only intro overrides (max 767px) ─────────────────────────────── */
+/* All rules below are strictly scoped. They must NEVER apply on desktop.       */
+@media (max-width: 767px) {
+  #intro {
+    overflow: hidden;
+  }
+
+  /* Phase 1 & 2 big words — scale down from 18vw desktop to 13vw mobile */
+  .intro-word {
+    font-size: 13vw !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    text-align: center !important;
+    width: 100vw !important;
+    line-height: 1 !important;
+  }
+
+  /* Phase 3 name letters row — allow natural wrapping on narrow screens */
+  .intro-name-letters {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100vw !important;
+    padding: 0 4vw !important;
+  }
+
+  /* Each name letter — scale down from 10vw desktop to 9vw mobile */
+  .intro-letter {
+    font-size: 9vw !important;
+  }
+
+  /* Name-space spacer */
+  .intro-name-space {
+    width: 3vw !important;
+  }
+
+  /* Phase 3 subtitle — scale up from 1.4vw desktop to 3.5vw mobile */
+  .intro-subtitle {
+    font-size: 3.5vw !important;
+    white-space: normal !important;
+    text-align: center !important;
+    width: 100vw !important;
+  }
+
+  /* Scroll hint */
+  .intro-scroll-hint {
+    font-size: 2.5vw !important;
+  }
+}
+
